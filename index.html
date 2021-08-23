@@ -1,89 +1,173 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Horiseon Consultating</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="assets/css/style.css" />
+    
+    <title>John Stapleton's Portfolio</title>
+
+ 
 </head>
 
+
+<!-- Instruction
+
+GIVEN I need to sample a potential employee's previous work
+WHEN I load their portfolio
+THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
+WHEN I click one of the links in the navigation
+THEN the UI scrolls to the corresponding section
+WHEN I click on the link to the section about their work
+THEN the UI scrolls to a section with titled images of the developer's applications
+WHEN I am presented with the developer's first application
+THEN that application's image should be larger in size than the others
+WHEN I click on the images of the applications
+THEN I am taken to that deployed application
+WHEN I resize the page or view the site on various screens and devices
+THEN I am presented with a responsive layout that adapts to my viewport
+-->
+
+
 <body>
-    <header class="header">
-        <h1>Hori<span class="seo">seo</span>n</h1>
-        <div>
+<!--  Header/navigation bar  -->
+    <header >
+        <h1>
+            <a href="/">John Stapleton</a>
+        </h1>
+
+        <nav class="flex">
             <ul>
                 <li>
-                    <a href="#search-engine-optimization">Search Engine Optimization</a>
+                    <a href="#bio">About Me</a>
                 </li>
+
                 <li>
-                    <a href="#online-reputation-management">Online Reputation Management</a>
+                    <a href="#design-portfolio">Design Portfolio</a>
                 </li>
+
                 <li>
-                    <a href="#social-media-marketing">Social Media Marketing</a>
+                    <a href="#creative-output">Creative Output</a>
                 </li>
+
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+
             </ul>
-        </div>
+        </nav>
     </header>
+<!--  End of header/nav bar  -->
 
-
-    <div class="hero"></div>
-
-
-    <section class="content">
-        <article id="search-engine-optimization" class="content-article">
-            <img src="./assets/images/search-engine-optimization.jpg" alt="" class="float-left" />
-            <h2>Search Engine Optimization</h2>
+<!--  Hero -->
+    <section class="hero">
+        <div>
             <p>
-                The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
+                
             </p>
-        </article>
-        <article id="online-reputation-management" class="content-article">
-            <img src="./assets/images/online-reputation-management.jpg" alt="" class="float-right" />
-            <h2>Online Reputation Management</h2>
-            <p>
-                The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business.
-            </p>
-        </article>
-        <article id="social-media-marketing" class="content-article">
-            <img src="./assets/images/social-media-marketing.jpg" alt="" class="float-left" />
-            <h2>Social Media Marketing</h2>
-            <p>
-                Social media continues to have a sizable influence on buying habits. Social media marketing helps you determine which platforms are suited to your brand, using analytics to find the right markets and increase your lead generation.
-            </p>
-        </article>
+        </div>
+
+    </section>
+<!--  End of Hero  -->
+
+
+<!--  Bio -->
+   <section id="bio" class="biography">
+       <div>
+         <h2>About Me</h2>
+       </div>
+       <div class="bio-text">
+           <p>
+               John was born and raised for the better half of his childhood in the Bay Area of Northern California.
+               He spent a sizeable portion of his youth moving frequently, giving him a diverse background and an awareness of different cultures.
+               He is a gifted artist who enjoys anything that can be considered an adventure, whether it be of the body or of the mind.
+               With a knack for technology and a propensity to create, he decided to put his intuitive skills to good use and receive the training required to contribute to society as a software engineer. 
+               When not designing websites, you can find John writing and recording music, journaling, working on his book, or getting some sunlight.
+               He is available for freelance work at the contact information provided below.
+           </p>
+       </div>
+    </section>
+<!--  End of Bio  -->
+
+
+<!--  Design Portfolio  -->
+    <section id="design-portfolio" class="design-portfolio">
+        <div>
+            <h2>Design Portfolio</h2>
+        </div>
+        <div class="website-selector flex">
+            <div>
+             <button id="button-one" class="website-button">
+                Mariachi</button>
+            </div>   
+            <div class="small-buttons">
+             <button id="button-two" class="website-button">
+                Skater</button class="website-button">
+             <button id="button-three" class="website-button">
+                Sir Sly</button>
+             <button id="button-four" class="website-button">
+                Beatles</button>
+             <button id="button-five" class="website-button">
+                Surfin' USA</button>
+            </div>    
+        </div>
+
     </section>
 
-
-    <aside class="benefits">
-        <div class="benefit-text">
-            <h3>Lead Generation</h3>
-            <img src="./assets/images/lead-generation.png" alt="" />
-            <p>
-                Inbound strategies for lead generation require less work for your business, bringing customers directly to your website.
-            </p>
-        </div>
-        <div class="benefit-text">
-            <h3>Brand Awareness</h3>
-            <img src="./assets/images/brand-awareness.png" alt="" />
-            <p>
-                Users find your business through paid and organic searches, increasing the search ranking and visibility for your business.
-            </p>
-        </div>
-        <div class="benefit-text">
-            <h3>Cost Management</h3>
-            <img src="./assets/images/cost-management.png" alt="" ></img>
-            <p>
-                As the search ranking for your business increases, your advertising costs decrease, and you no longer need to advertise your page.
-            </p>
-        </div>
-    </aside>
+<!--  End of Design Portfolio  -->
 
 
-    <footer class="footer">
-        <h2>Made with ❤️️ by Horiseon</h2>
-        <p>
-            &copy; 2019 Horiseon Social Solution Services, Inc.
-        </p>
-    </footer>
+<!--  Creative Output  -->
+    <section id="creative-output" class="creative-output">
+        <div>
+            <h2>Creative Output</h2>
+        </div>
+        <div class="creative-output-selector flex">
+            
+                <a href="https://open.spotify.com/artist/0KFIJc9Srx4ATt7m5fShW9?si=dVuwZrRdQl6P8QuYlhsiig&dl_branch=1">Spotify</a>
+                <a href="https://music.apple.com/us/artist/john-dick-stapleton/1495274152">Apple Music</a>
+        </div>
+
+    </section>
+<!--  End of Creative Output  -->
+
+
+<!--  Contact  -->
+    <section id="contact" class="contact">
+        <div>
+            <h2>Contact Me</h2>
+        </div>
+
+        <div class="contact-form flex">
+            <form>
+                <p>Email: </p>
+                <a href="mailto:johnstapleton52@gmail.com">johnstapleton52@gmail.com</a>
+
+                <p>LinkedIn: </p>
+                <a href="https://www.linkedin.com/in/john-stapleton-0657b518b/">John Stapleton</a>
+
+                <p>Instagram:</p>
+                <a href="https://www.instagram.com/johndickstapleton/">@johndickstapleton</a>
+            </form>
+            <div class="contact-photo"><img src="assets/images/contact-photo.jpg" alt="Friendly photo of John"></div>
+        </div>
+        
+    </section>
+
+<!--  End of Contact  -->
+
+
+<!--  Footer  -->
+<footer>
+    <div>
+        <h2>Made with love by John.</h2>
+    </div>
+</footer>
+
+<!--  End of footer  -->
+    
 </body>
-
 </html>
+
